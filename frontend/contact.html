@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – Noble Dryfruits</title>
+    <link rel="icon" type="image/png" href="images/noble-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-section { padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-form-container { background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .contact-info-container { display: flex; flex-direction: column; gap: 30px; }
+        .info-item { display: flex; gap: 20px; align-items: flex-start; }
+        .info-icon { width: 50px; height: 50px; background: #2d5f3f; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+        .info-content h4 { margin-bottom: 5px; font-size: 1.1rem; }
+        .info-content p { color: #666; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; }
+        .form-group textarea { min-height: 150px; }
+    </style>
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🎉 Free Shipping on Orders Over ₹999! <a href="collection.html" class="shop-now-link">Shop Now</a></p>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-circle"><span class="logo-text">ND</span></div>
+                    <span class="logo-name">Noble Dryfruits</span>
+                </a>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="collection.html" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn" id="account-btn"><i class="fas fa-user"></i></button>
+                <button class="icon-btn" id="cart-btn"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with our team.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-container">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Get In Touch</h2>
+                    <p>Have questions about our products or your order? Contact us using the information below or send us a message through the form.</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-content">
+                            <h4>Our Location</h4>
+                            <p>123 Market Street, New Delhi, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Phone Number</h4>
+                            <p>+91 9479770041</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email Address</h4>
+                            <p>info@lotusdryfruits.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-page-form">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Noble Dryfruits. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Off-canvas Cart -->
+    <div class="offcanvas" id="cart-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Shopping Cart (<span id="cart-count">0</span>)</h3>
+            <button class="close-btn" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-items-container">
+                <div class="empty-cart"><p>Your cart is empty</p></div>
+            </div>
+            <div id="cart-checkout" style="display: none; border-top: 1px solid #eee; padding-top: 20px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-weight: bold;">
+                    <span>Total:</span><span id="cart-total">₹0</span>
+                </div>
+                <form id="checkout-form">
+                    <input type="text" id="checkout-name" placeholder="Full Name" required style="width: 100%; margin-bottom: 10px; padding: 10px;">
+                    <input type="email" id="checkout-email" placeholder="Email" required style="width: 100%; margin-bottom: 10px; padding: 10px;">
+                    <textarea id="checkout-address" placeholder="Address" required style="width: 100%; margin-bottom: 10px; padding: 10px;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Off-canvas Account -->
+    <div class="offcanvas" id="account-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Account</h3>
+            <button class="close-btn" id="close-account"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="auth-forms">
+                <div id="login-form-container">
+                    <h4>Login</h4>
+                    <form id="login-form" style="display: flex; flex-direction: column; gap: 10px;">
+                        <input type="email" id="login-email" placeholder="Email" required style="padding: 10px;">
+                        <input type="password" id="login-password" placeholder="Password" required style="padding: 10px;">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+                </div>
+                <div id="register-form-container" style="display: none;">
+                    <h4>Register</h4>
+                    <form id="register-form" style="display: flex; flex-direction: column; gap: 10px;">
+                        <input type="email" id="register-email" placeholder="Email" required style="padding: 10px;">
+                        <input type="password" id="register-password" placeholder="Password" required style="padding: 10px;">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                    <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+                </div>
+            </div>
+            <div id="user-profile" style="display: none; text-align: center;">
+                <p>Welcome, <strong id="user-email-display"></strong></p>
+                <button id="logout-btn" class="btn btn-secondary" style="width: 100%;">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>

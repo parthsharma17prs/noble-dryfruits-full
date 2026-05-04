@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Products – Noble Dryfruits</title>
+    <meta name="description"
+        content="Browse our complete collection of premium dry fruits, nuts, spices, and organic products.">
+    <link rel="icon" type="image/png" href="images/noble-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="collection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🎉 Free Shipping on Orders Over ₹999! <a href="#" class="shop-now-link">Shop Now</a></p>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-circle">
+                        <span class="logo-text">ND</span>
+                    </div>
+                    <span class="logo-name">Noble Dryfruits</span>
+                </a>
+            </div>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link active">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-column">
+                                <h4>Dry Fruits</h4>
+                                <a href="collection.html">Almonds</a>
+                                <a href="collection.html">Cashews</a>
+                                <a href="collection.html">Raisins</a>
+                                <a href="collection.html">Walnuts</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Spices</h4>
+                                <a href="collection.html">Garam Masala</a>
+                                <a href="collection.html">Chana Masala</a>
+                                <a href="collection.html">Tandoori Masala</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Special Items</h4>
+                                <a href="collection.html">Premium Mixtures</a>
+                                <a href="collection.html">Organic Seeds</a>
+                                <a href="collection.html">Dried Fruits</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Our Collection <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="collection.html">Assorted Nuts</a>
+                            <a href="collection.html">Berries</a>
+                            <a href="collection.html">Flavored Nuts</a>
+                            <a href="collection.html">Premium Mixtures</a>
+                            <a href="collection.html">Sundried Fruits</a>
+                            <a href="collection.html">Seeds</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <button class="icon-btn" id="search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="icon-btn" id="account-btn" aria-label="Account">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="icon-btn" id="wishlist-btn" aria-label="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="icon-btn" id="cart-btn" aria-label="Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Collection Header -->
+    <section class="collection-header">
+        <div class="container">
+            <h1>All Products</h1>
+            <p>Discover our complete range of premium quality products</p>
+        </div>
+    </section>
+
+    <!-- Collection Content -->
+    <section class="collection-content">
+        <div class="container">
+            <div class="collection-layout">
+                <!-- Sidebar Filters -->
+                <aside class="collection-sidebar">
+                    <div class="filter-section">
+                        <h3 class="filter-title">Filters</h3>
+
+                        <!-- Availability Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-heading">Availability</h4>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked>
+                                <span>In Stock</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>Out of Stock</span>
+                            </label>
+                        </div>
+
+                        <!-- Price Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-heading">Price</h4>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>Under ₹200</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>₹200 - ₹500</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>₹500 - ₹1000</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>Above ₹1000</span>
+                            </label>
+                        </div>
+
+                        <!-- Category Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-heading">Category</h4>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>Dry Fruits</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>Nuts</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>Spices</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>Seeds</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox">
+                                <span>Berries</span>
+                            </label>
+                        </div>
+
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 20px;">Apply Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="collection-main">
+                    <div class="collection-toolbar">
+                        <p class="product-count">Showing 12 products</p>
+                        <div class="sort-dropdown">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select">
+                                <option>Featured</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Alphabetically: A-Z</option>
+                                <option>Alphabetically: Z-A</option>
+                                <option>Date: New to Old</option>
+                                <option>Date: Old to New</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Product Cards (Reusing from homepage) -->
+                        <div class="product-card">
+                            <div class="product-badge">Sale 16%</div>
+                            <div class="product-image">
+                                <img src="images/premium almonds.jpeg" alt="Premium Almonds">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Premium California Almonds</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹499</span>
+                                    <span class="price-original">₹599</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">250g</button>
+                                    <button class="variant-btn active">500g</button>
+                                    <button class="variant-btn">1kg</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">New</div>
+                            <div class="product-image">
+                                <img src="images/cashew nuts.png" alt="Cashew Nuts">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Premium Cashew Nuts</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹699</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">250g</button>
+                                    <button class="variant-btn active">500g</button>
+                                    <button class="variant-btn">1kg</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">Sale 20%</div>
+                            <div class="product-image">
+                                <img src="images/dried figs.png" alt="Dried Figs">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Turkish Anjeer (Dried Figs)</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹399</span>
+                                    <span class="price-original">₹499</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">250g</button>
+                                    <button class="variant-btn active">500g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/garam masala.png" alt="Garam Masala">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Premium Garam Masala</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹149</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">50g</button>
+                                    <button class="variant-btn active">100g</button>
+                                    <button class="variant-btn">200g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">Bestseller</div>
+                            <div class="product-image">
+                                <img src="images/premium walnut kernels.png" alt="Walnut Kernels">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Premium Walnut Kernels</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹599</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">250g</button>
+                                    <button class="variant-btn active">500g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/organic pumpkin seeds.png" alt="Pumpkin Seeds">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Organic Pumpkin Seeds</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹299</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">200g</button>
+                                    <button class="variant-btn active">400g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">Sale 15%</div>
+                            <div class="product-image">
+                                <img src="images/chana masala.jpeg" alt="Chana Masala">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Famous Chana Masala</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹129</span>
+                                    <span class="price-original">₹149</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">50g</button>
+                                    <button class="variant-btn active">100g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">Bestseller</div>
+                            <div class="product-image">
+                                <img src="images/dry fruit mix.png" alt="Dry Fruit Mix">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Royal Dry Fruit Mixture</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹799</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">500g</button>
+                                    <button class="variant-btn active">1kg</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/pistachios.png" alt="Pistachios">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Iranian Pistachios</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹899</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">250g</button>
+                                    <button class="variant-btn active">500g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">New</div>
+                            <div class="product-image">
+                                <img src="images/organic pumpkin seeds.png" alt="Chia Seeds">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Organic Chia Seeds</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹249</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">200g</button>
+                                    <button class="variant-btn active">400g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge">Sale 18%</div>
+                            <div class="product-image">
+                                <img src="images/dried figs.png" alt="Dates">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Medjoul Dates Premium</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹449</span>
+                                    <span class="price-original">₹549</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">250g</button>
+                                    <button class="variant-btn active">500g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/garam masala.png" alt="Tandoori Masala">
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn" onclick="window.location.href='product.html'">Quick
+                                        View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Tandoori Masala Blend</h3>
+                                <div class="product-price">
+                                    <span class="price-current">₹139</span>
+                                </div>
+                                <div class="product-variants">
+                                    <button class="variant-btn">50g</button>
+                                    <button class="variant-btn active">100g</button>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Noble Dryfruits</h3>
+                    <p>India's trusted source for premium dry fruits, nuts, and exotic spices. Quality guaranteed,
+                        you the finest selection from around the world.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="collection.html">Shop All</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Collections</h3>
+                    <ul>
+                        <li><a href="collection.html">Premium Nuts</a></li>
+                        <li><a href="collection.html">Dried Fruits</a></li>
+                        <li><a href="collection.html">Spices & Masala</a></li>
+                        <li><a href="collection.html">Organic Seeds</a></li>
+                        <li><a href="collection.html">Gift Hampers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Market Street, New Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91 9479770041</li>
+                        <li><i class="fas fa-envelope"></i> info@lotusdryfruits.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Noble Dryfruits. All rights reserved. | <a href="#">Privacy Policy</a> | <a
+                        href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917035961000" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Off-canvas Cart -->
+    <div class="offcanvas" id="cart-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Shopping Cart (<span id="cart-count">0</span>)</h3>
+            <button class="close-btn" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-items-container">
+                <!-- Cart items will be injected here -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <a href="collection.html" class="btn btn-primary">Continue Shopping</a>
+                </div>
+            </div>
+            <div id="cart-checkout" style="display: none; margin-top: 20px; border-top: 2px solid #eee; padding-top: 20px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-weight: bold; font-size: 1.2rem;">
+                    <span>Total:</span>
+                    <span id="cart-total">₹0</span>
+                </div>
+                <form id="checkout-form">
+                    <input type="text" id="checkout-name" placeholder="Full Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="email" id="checkout-email" placeholder="Email Address" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                    <textarea id="checkout-address" placeholder="Shipping Address" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; min-height: 80px;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Place Order & Send Receipt</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Off-canvas Account (Auth) -->
+    <div class="offcanvas" id="account-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Account</h3>
+            <button class="close-btn" id="close-account">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="auth-forms">
+                <div id="login-form-container">
+                    <h4>Login</h4>
+                    <form id="login-form" style="display: flex; flex-direction: column; gap: 10px;">
+                        <input type="email" id="login-email" placeholder="Email" required style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        <input type="password" id="login-password" placeholder="Password" required style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <p style="margin-top: 15px;">Don't have an account? <a href="#" id="show-register" style="color: #2d5f3f; font-weight: 600;">Register here</a></p>
+                </div>
+                <div id="register-form-container" style="display: none;">
+                    <h4>Register</h4>
+                    <form id="register-form" style="display: flex; flex-direction: column; gap: 10px;">
+                        <input type="email" id="register-email" placeholder="Email" required style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        <input type="password" id="register-password" placeholder="Password" required style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                    <p style="margin-top: 15px;">Already have an account? <a href="#" id="show-login" style="color: #2d5f3f; font-weight: 600;">Login here</a></p>
+                </div>
+            </div>
+            <div id="user-profile" style="display: none; text-align: center;">
+                <div style="font-size: 3rem; color: #2d5f3f; margin-bottom: 15px;"><i class="fas fa-user-circle"></i></div>
+                <p style="font-size: 1.1rem; margin-bottom: 20px;">Welcome back,<br><strong id="user-email-display"></strong></p>
+                <button id="logout-btn" class="btn btn-secondary" style="width: 100%;">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Off-canvas Wishlist -->
+    <div class="offcanvas" id="wishlist-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Wishlist (0)</h3>
+            <button class="close-btn" id="close-wishlist">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="empty-cart">
+                <i class="fas fa-heart"></i>
+                <p>Your wishlist is empty</p>
+                <a href="collection.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

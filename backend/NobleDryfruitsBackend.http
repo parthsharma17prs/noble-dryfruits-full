@@ -1,0 +1,6 @@
+@NobleDryfruitsBackend_HostAddress = http://localhost:5195
+
+GET {{NobleDryfruitsBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

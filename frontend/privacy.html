@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Noble Dryfruits</title>
+    <link rel="icon" type="image/png" href="images/noble-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .policy-section { padding: 80px 0; line-height: 1.8; }
+        .policy-content h2 { margin: 30px 0 15px; color: #2d5f3f; }
+        .policy-content p { margin-bottom: 20px; color: #555; }
+        .policy-content ul { margin-bottom: 20px; padding-left: 20px; }
+        .policy-content li { margin-bottom: 10px; color: #555; }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-circle"><span class="logo-text">ND</span></div>
+                    <span class="logo-name">Noble Dryfruits</span>
+                </a>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="collection.html" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn" id="account-btn"><i class="fas fa-user"></i></button>
+                <button class="icon-btn" id="cart-btn"><i class="fas fa-shopping-cart"></i><span class="badge">0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy is important to us.</p>
+        </div>
+    </section>
+
+    <section class="policy-section">
+        <div class="container">
+            <div class="policy-content">
+                <h2>1. Information We Collect</h2>
+                <p>We collect information you provide directly to us when you create an account, place an order, or contact us. This includes your name, email address, shipping address, and phone number.</p>
+
+                <h2>2. How We Use Your Information</h2>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Process and fulfill your orders</li>
+                    <li>Send you order confirmations and updates</li>
+                    <li>Respond to your comments and questions</li>
+                    <li>Communicate with you about new products and offers</li>
+                </ul>
+
+                <h2>3. Security</h2>
+                <p>We take reasonable measures to protect your personal information from loss, theft, and unauthorized access. All transactions are processed through secure gateways.</p>
+
+                <h2>4. Sharing of Information</h2>
+                <p>We do not sell or rent your personal information to third parties. We may share information with service providers who perform services for us, such as shipping and payment processing.</p>
+
+                <h2>5. Cookies</h2>
+                <p>We use cookies to improve your experience on our website, such as keeping track of your shopping cart.</p>
+
+                <h2>6. Changes to This Policy</h2>
+                <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Noble Dryfruits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Off-canvas Panels -->
+    <div class="offcanvas" id="cart-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Shopping Cart (<span id="cart-count">0</span>)</h3>
+            <button class="close-btn" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-items-container">
+                <div class="empty-cart"><p>Your cart is empty</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas" id="account-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Account</h3>
+            <button class="close-btn" id="close-account"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="auth-forms">
+                <p>Please login to view your account.</p>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
